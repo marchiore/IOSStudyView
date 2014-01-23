@@ -21,6 +21,7 @@
 		26FBEB891890991B00C64171 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FBEB6B1890991B00C64171 /* UIKit.framework */; };
 		26FBEB911890991B00C64171 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26FBEB8F1890991B00C64171 /* InfoPlist.strings */; };
 		26FBEB931890991B00C64171 /* IOSStudyViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FBEB921890991B00C64171 /* IOSStudyViewTests.m */; };
+		26FBEB9E18909B0E00C64171 /* Tarefa.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FBEB9D18909B0E00C64171 /* Tarefa.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		26FBEB8E1890991B00C64171 /* IOSStudyViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSStudyViewTests-Info.plist"; sourceTree = "<group>"; };
 		26FBEB901890991B00C64171 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		26FBEB921890991B00C64171 /* IOSStudyViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSStudyViewTests.m; sourceTree = "<group>"; };
+		26FBEB9C18909B0E00C64171 /* Tarefa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tarefa.h; sourceTree = "<group>"; };
+		26FBEB9D18909B0E00C64171 /* Tarefa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tarefa.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				26FBEB7D1890991B00C64171 /* ViewController.m */,
 				26FBEB7F1890991B00C64171 /* Images.xcassets */,
 				26FBEB6E1890991B00C64171 /* Supporting Files */,
+				26FBEB9C18909B0E00C64171 /* Tarefa.h */,
+				26FBEB9D18909B0E00C64171 /* Tarefa.m */,
 			);
 			path = IOSStudyView;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				26FBEB7E1890991B00C64171 /* ViewController.m in Sources */,
 				26FBEB781890991B00C64171 /* AppDelegate.m in Sources */,
+				26FBEB9E18909B0E00C64171 /* Tarefa.m in Sources */,
 				26FBEB741890991B00C64171 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
