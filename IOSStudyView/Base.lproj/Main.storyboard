@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - Tarefas-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -16,10 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-WV-dyN">
-                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="isQ-WV-dyN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections>
+                                    <tableViewSection id="cWp-0B-AuK">
+                                        <cells>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ndf-ka-PNJ">
+                                                <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ndf-ka-PNJ" id="yLG-eG-PM9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <segue destination="XN0-4U-WTX" kind="push" identifier="Detalhes" id="L8c-cY-79N"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </cells>
+                                    </tableViewSection>
+                                </sections>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="NTv-Od-Kw3"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="a9p-jL-iWc"/>
@@ -28,7 +45,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="JmB-fK-oHK"/>
+                    <navigationItem key="navigationItem" title="Tarefas" id="JmB-fK-oHK"/>
                     <connections>
                         <outlet property="tableView" destination="isQ-WV-dyN" id="ihc-3U-fKQ"/>
                     </connections>
@@ -37,19 +54,39 @@
             </objects>
             <point key="canvasLocation" x="1119" y="287"/>
         </scene>
-        <!--View Controller-->
+        <!--Status Tarefa View Controller - Info-->
         <scene sceneID="q7I-o4-s9Q">
             <objects>
-                <viewController id="XN0-4U-WTX" sceneMemberID="viewController">
+                <viewController id="XN0-4U-WTX" customClass="StatusTarefaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oU7-Nc-6kD"/>
                         <viewControllerLayoutGuide type="bottom" id="CMq-WR-Cgy"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="jHd-HJ-J1y">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Info" id="jHd-HJ-J1y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqQ-O4-dCl">
+                                <rect key="frame" x="20" y="97" width="246" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qga-3c-cbt">
+                                <rect key="frame" x="20" y="138" width="239" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Info" id="chn-my-eN9"/>
+                    <connections>
+                        <outlet property="Label1" destination="aqQ-O4-dCl" id="urn-76-ctb"/>
+                        <outlet property="Label2" destination="qga-3c-cbt" id="hEx-CP-DvA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8u-UW-yag" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

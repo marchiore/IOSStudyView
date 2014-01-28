@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26A78F7A1891241300734A4B /* StatusTarefaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A78F791891241300734A4B /* StatusTarefaViewController.m */; };
 		26FBEB681890991B00C64171 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FBEB671890991B00C64171 /* Foundation.framework */; };
 		26FBEB6A1890991B00C64171 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FBEB691890991B00C64171 /* CoreGraphics.framework */; };
 		26FBEB6C1890991B00C64171 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26FBEB6B1890991B00C64171 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26A78F781891241300734A4B /* StatusTarefaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusTarefaViewController.h; sourceTree = "<group>"; };
+		26A78F791891241300734A4B /* StatusTarefaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusTarefaViewController.m; sourceTree = "<group>"; };
 		26FBEB641890991B00C64171 /* IOSStudyView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSStudyView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FBEB671890991B00C64171 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		26FBEB691890991B00C64171 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 				26FBEB6E1890991B00C64171 /* Supporting Files */,
 				26FBEB9C18909B0E00C64171 /* Tarefa.h */,
 				26FBEB9D18909B0E00C64171 /* Tarefa.m */,
+				26A78F781891241300734A4B /* StatusTarefaViewController.h */,
+				26A78F791891241300734A4B /* StatusTarefaViewController.m */,
 			);
 			path = IOSStudyView;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				26FBEB7E1890991B00C64171 /* ViewController.m in Sources */,
 				26FBEB781890991B00C64171 /* AppDelegate.m in Sources */,
 				26FBEB9E18909B0E00C64171 /* Tarefa.m in Sources */,
+				26A78F7A1891241300734A4B /* StatusTarefaViewController.m in Sources */,
 				26FBEB741890991B00C64171 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +472,7 @@
 				26FBEB981890991B00C64171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26FBEB991890991B00C64171 /* Build configuration list for PBXNativeTarget "IOSStudyViewTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +481,7 @@
 				26FBEB9B1890991B00C64171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

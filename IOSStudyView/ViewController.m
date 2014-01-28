@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Tarefa.h"
+#import "StatusTarefaViewController.h"
 
 @interface ViewController ()
 
@@ -63,5 +64,22 @@
     
     return cell;
 }
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    //Chama um segue
+    Tarefa *senderTarefa = [tarefas objectAtIndex:indexPath.row];
+    
+    [self performSegueWithIdentifier:@"Detalhes" sender:senderTarefa];
+
+
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"Detalhes"]) {
+        StatusTarefaViewController *status = (StatusTarefaViewController *)segue.destinationViewController;
+        status.tarefa = sender;
+    }
+}
+
 
 @end
